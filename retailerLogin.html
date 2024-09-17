@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Retailer SignUp/Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Retailer SignUp/Login</title>
     <link rel="stylesheet" href="rlstyle.css">
 </head>
 <body>
     <div class="retailerLogin">
-        <h1>Registration</h1>
+        <h1>Retailer Registration</h1>
         <form action="#" method="post">
-            <p>Full Name:</p>
-            <input type="text" name="fullname" placeholder="Full Name">
-            <p>Mobile No:</p>
-            <input type="number" name="fullname" placeholder="Mobile No.">
-            <p>Aadhar:</p>
-            <input type="number" name="Aadhar" placeholder="Aadhar">
-            <p>Address:</p>
-            <input type="text" name="address" placeholder="Address of shop">
-            <p>Pincode:</p>
-            <input type="number" name="pin" placeholder="Pincode">
-            <p>Type of Shop:</p>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            
+            <label for="mobile">Mobile No:</label>
+            <input type="number" id="mobile" name="mobile" placeholder="Mobile No.">
+            
+            <label for="aadhar">Aadhar:</label>
+            <input type="number" id="aadhar" name="Aadhar" placeholder="Aadhar">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Address of shop">
+            
+            <label for="pin">Pincode:</label>
+            <input type="number" id="pin" name="pin" placeholder="Pincode">
+            
+            <label for="shopType">Type of Shop:</label>
             <select name="shop" id="shopType">
-                <option value="grocery">grocery</option>
-                <option value="furniture">furniture</option>
-                <option value="homedecor">homedecor</option>
-                <option value="hardware">hardware</option>
-              </select>
+                <option value="grocery">Grocery</option>
+                <option value="furniture">Furniture</option>
+                <option value="homedecor">Home Decor</option>
+                <option value="hardware">Hardware</option>
+            </select>
+            
             <button type="submit">Register now</button>
         </form>
     </div>
-    
 </body>
 </html>
