@@ -8,10 +8,11 @@
 body {
     background-image: url('https://c8.alamy.com/comp/W5CH36/shopkeeper-in-grocery-shop-W5CH36.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center ;
+    background-repeat: no-repeat;
     color: #ffffff;
+    height: 100vh;
 }
-
 .retailerLogin {
     position: absolute;
     top: 50%;
