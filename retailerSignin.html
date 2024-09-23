@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retailer Sign-in</title>
-    <link rel="stylesheet" href="rsstyle.css">
+    <title>Sign in</title>
+     <link rel="stylesheet" href="user.css">
 </head>
 <body>
-    <div class="main">
-        <h2 id="sgn">Sign-Up</h2>
-        <div class="name">
-            <input type="text" id="namertlr" class="inp" placeholder="Enter you name">
-        </div>
-        <div class="email">
-            <input type="email" id="mailrtlr" class="inp" placeholder="Enter E-mail">
-        </div>
-        <div class="mobno">
-            <input type="number" id="mobnortlr" class="inp" placeholder="Mobile-No.">
-        </div>
-        <div class="button">
-            <button type="button" id="btn">Submit</button>
-        </div>
-    </div>    
+    <div class="one">
+        <h1> Sign in</h1>
+            <form>
+                <div>
+                    <input required type="text" name="Enter name" id="Enter name-input" placeholder="Enter User name">
+                </div>
+                
+               
+                <div>
+                    <input required type="password" name="Enter password" id="Enter password-input" placeholder="Enter password">
+                </div>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p> Not have an account ? <a href="retailersignup.html">Create account</a></p>
+       
+    </div>
+    
 </body>
 </html>
