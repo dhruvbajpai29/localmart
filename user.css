@@ -7,13 +7,13 @@ html{
     text-align: center;
    
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210609/pngtree-3d-render-online-shopping-with-mobile-and-bag-image_727266.jpg");
-    height: 70vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .one{
-    height: 100vh;
+    height: 97vh;
     width: max(40% 600px);
     padding: 10px;
     border-radius: 0 20px 20px 0;
