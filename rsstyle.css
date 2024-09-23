@@ -22,8 +22,30 @@ html{
     flex-direction: column;
     border-radius: 19px;
     margin-top: 33vh;
-    background-color: bisque;
-}
-.button{
 
+}
+h2{
+    color: rgb(14, 8, 100);
+}
+#btn{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #5c7bd8;
+    color: #2c0770;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.inp{
+    font-size: 3vh;
+    border-radius: 9px;
+    width: 26vw;
+    height: 5vh;
+}
+#btn:hover{
+    background-color: #6c63ff;
+    color: #ffffff; 
 }
