@@ -98,3 +98,13 @@ form button:hover {
     transform: scale(1.05); 
     transition: all 0.3s ease; 
 }
+form select {
+    box-sizing: border-box;
+    width: 350px;
+    min-width:0;
+    height: 50px;
+    padding: 1em;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+   border: none;
+}
