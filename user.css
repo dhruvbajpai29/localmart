@@ -21,6 +21,7 @@ html{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+   
 }
 h1{
     font-size: 3rem;
@@ -52,14 +53,19 @@ form input{
     padding: 1em;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
-   border: none;
+   border: rgb(21, 37, 53);
     
     
 }
-form input:hover{
-    border:10px;
-    color:rgb(0, 0, 0);
+form input:hover {
+    background-color: #fbfbfc; 
+    
+    border: 1px solid #000; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
 }
+
 form button{
     margin-top: 10px;
     border-radius: 1000px;
