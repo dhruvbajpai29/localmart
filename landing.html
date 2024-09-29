@@ -3,38 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart in Navbar</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Shop</h1>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa fa-shopping-basket"></i> locomart </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#feature">feature</a>
+            <a href="#review">review</a>
+        </nav>
+        <div class="icon">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
         </div>
-        <div class="links">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-      
-        <div class="pin-code">
-            <label for="pin-input">Enter PIN: </label>
-            <input type="text" id="pin-input" placeholder="123456" maxlength="6">
-        </div>
-        <div>
-            <button class ="login">
-                <a href="userlogin.html">Login</a>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Enter pin-code....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <script src="script.js"></script>
 
-            </button>
-        </div>
-        <div class="cart">
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-
-    </nav>
 </body>
 </html>
