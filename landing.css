@@ -176,6 +176,116 @@ transition: .4s linear;
     text-decoration:underline ;
 
 }
+section{
+    padding:2rem 9%;
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e92424;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom:17rem ;
+
+
+
+}
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+
+}
+.heading span{
+    background: var(--orange);
+    color:#fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+.feature .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.feature .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align:center ;
+  
+
+}
+.feature .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.feature .box-container .box img{
+    margin:1rem 0;
+    height:18rem;
+}
+.feature .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    color:var(--black);
+
+}
+.feature .box-container .box p{
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    color:var(--light-color);
+    padding:1rem 0 ;
+
+}
+.product .product-slider{
+    padding:1rem;
+}
+.product .product-slider:first-child{
+    margin-bottom: 2rem;
+
+}
+.product .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--light-color);
+    transition: .2s linear;
+    
+}
+.product .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline:var(--outline-hover);
+
+}
+.product .product-slider .box img{
+    height: 20rem;
+
+}
+.product .product-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.product .product-slider .box .price{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+
+
+
+
+
+
+
 @media(max-width:991px){
     html{
         font-size:55%;
@@ -185,6 +295,11 @@ transition: .4s linear;
         padding: 2rem;
 
     }
+    section{
+        padding:2rem;
+    
+    }
+   
 }
 @media(max-width:768px){
     #menu-btn{
@@ -217,5 +332,9 @@ transition: .4s linear;
 @media(max-width:450px){
     html{
         font: size 55%;
+    }
+    .heading{
+
+        font-size: 2.5rem;
     }
 }
