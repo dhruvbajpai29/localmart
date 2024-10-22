@@ -31,7 +31,7 @@ var swiper = new Swiper(".product-slider", {
         delay: 7500,
         disableOnInteraction: false,
     },
-    centeredSlides: true, // Corrected this property name
+    centeredSlides: true, 
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -51,7 +51,7 @@ var swiper = new Swiper(".review-slider", {
         delay: 7500,
         disableOnInteraction: false,
     },
-    centeredSlides: true, // Corrected this property name
+    centeredSlides: true, 
     breakpoints: {
         0: {
             slidesPerView: 1,
