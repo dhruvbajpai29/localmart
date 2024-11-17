@@ -185,7 +185,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e92424;
+    background: url();
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
