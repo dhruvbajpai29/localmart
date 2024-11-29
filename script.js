@@ -70,7 +70,7 @@ window.onload = () => {
     form.addEventListener("submit", function (event) {
       event.preventDefault(); 
       const a = document.getElementById("search-box");
-      const pincode = a.value.trim(); // 
+      const pincode = a.value.trim(); 
     let status=0;
       if (pincode) {
         alert(`Entered Pin Code: ${pincode}`);
