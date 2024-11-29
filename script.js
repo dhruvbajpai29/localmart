@@ -78,11 +78,11 @@ window.onload = () => {
             status=1;
             window.location.href = "ShopCategory1.html";
         } 
-        if(pincode==="123456"){
+        if(pincode==="326023"){
             status=1;
                 window.location.href = "ShopCategory2.html";
             }
-        if(pincode==="182320") {
+        if(pincode==="207248") {
             status=1;
             window.location.href = "ShopCategory3.html";
         }
