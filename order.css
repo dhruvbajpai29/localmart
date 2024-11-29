@@ -1,0 +1,47 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 95%;
+    max-width: 800px;
+  }
+  
+ 
+  .tick-container {
+    margin-bottom: 10px;
+  }
+  
+  .tick-image {
+    width: 250px;
+    height: 250px;
+
+  }
+  
+  h1 {
+    color: #ff7800;
+    margin-bottom: 10px;
+    font-size: 6.2em;
+  }
+  
+  .order-details p {
+    margin: 10px 0;
+    font-size: 2.1em;
+  }
+  p{
+    font-size: 2.1em;;
+
+  }
