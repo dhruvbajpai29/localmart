@@ -24,7 +24,7 @@
     <p>Your order has been placed successfully.</p>
     <div class="order-details">
       <p><strong>Order ID:</strong> <span id="orderId"></span></p>
-      <p><strong>Total Amount:</strong> <span id="orderTotal"></span></p>
+      <p><strong>Total Amount:</strong> <span id="orderTotal">₹0</span></p>
       <p><strong>Shipping Address:</strong> <span id="shippingAddress"></span></p>
     </div>
     <a href="landing.html" class="btn">HOME</a>
@@ -34,5 +34,20 @@
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  <script>
+       
+       document.addEventListener("DOMContentLoaded", () => {
+    const orderTotalElement = document.getElementById("orderTotal");
+
+    const totalAmount = localStorage.getItem("orderTotal");
+
+   
+    if (totalAmount) {
+        orderTotalElement.textContent = `₹${totalAmount}`;
+    } else {
+        orderTotalElement.textContent = "₹0"; 
+    }
+});
+  </script>
 </body>
 </html>

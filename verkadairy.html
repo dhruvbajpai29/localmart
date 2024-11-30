@@ -30,9 +30,9 @@
             <h2>Shopping Cart</h2>
             <ul id="cart-items" class="list-group mb-3"></ul>
             <p id="cart-total" class="fw-bold">Total Items: 0</p>
-            <a href="orderconfirm.html">
+            
             <button id="checkout-btn" class="btn btn-success">Checkout</button>
-          </a>
+          
             <button id="close-cart" class="btn btn-danger mt-2">Close</button>
         </div>
     </div>
@@ -307,15 +307,29 @@
           document.getElementById("cart-btn").addEventListener("click", toggleCartModal);
   
           document.getElementById("close-cart").addEventListener("click", toggleCartModal);
-  
           document.getElementById("checkout-btn").addEventListener("click", () => {
-              const totalAmount = calculateTotalAmount();
-              alert(`Checkout successful! Total Amount: ₹${totalAmount}\nClearing cart...`);
-              cart = {};
-              updateCartCount();
-              displayCartItems();
-              toggleCartModal();
-          });
+    const totalItems = Object.values(cart).reduce((sum, count) => sum + count, 0);
+
+    if (totalItems === 0) {
+        alert("Cart is empty. Please add items to the cart before checking out.");
+        return; 
+    }
+
+    const totalAmount = calculateTotalAmount();
+
+    localStorage.setItem("orderTotal", totalAmount);
+
+    alert(`Checkout successful! Total Amount: ₹${totalAmount}\nClearing cart...`);
+    cart = {};
+    updateCartCount();
+    displayCartItems();
+    toggleCartModal();
+
+  
+    window.location.href = "orderconfirm.html";
+});
+
+
       });
   </script>
   
