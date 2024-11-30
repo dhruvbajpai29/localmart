@@ -28,7 +28,10 @@
 
 
         <form action="" class="search-form" >
-            <input type="search" onsubmit="return fetchOnEnter(event)" id="search-box" placeholder="Enter 1 pin-code....">
+            <input type="search" onsubmit="return fetchOnEnter(event)" id="search-box" placeholder="Enter pin-code...." pattern="\d{6}" 
+            maxlength="6" 
+            title="Please enter a 6-digit pin-code" 
+            required >
             <label for="search-box" class="fas fa-search"></label>
         </form>
 
@@ -91,31 +94,31 @@
                 <div class="swiper-slide box">
                     <img src="https://media.istockphoto.com/id/607264882/vector/facade-pharmacy-store-with-a-signboard-awning-symbol-on-shopwindow.jpg?s=612x612&w=0&k=20&c=4oxrqk-ReIZm6BPXzSiDXFnDYeDBk5nG2TrpzWkgxXA=" alt="">
                     <h3>Medical </h3>
-                    <div class="price"> Rs-50 -100</div>
+                    <div class="price"> </div>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="https://market-resized.envatousercontent.com/previews/files/301370325/preview.jpg?w=590&h=590&cf_fit=crop&format=auto&q=85&s=2fe9daa68e9add6efc3098e0ad28175ab1310d4dd7b3f018044b575739c8432c" alt="">
                     <h3>Vegitable and Fruit </h3>
-                    <div class="price"> Rs-50 -100</div>
+                    <div class="price"></div>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="https://img.freepik.com/premium-vector/grocery-shop-building-cartoon-illustration-grocery-store_561977-34.jpg" alt="">
                     <h3>Grocery </h3>
-                    <div class="price"> Rs-50 -100</div>
+                    <div class="price"> </div>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="https://img.freepik.com/premium-vector/wooden-counter-selling-cheese-dairy-products_547662-2007.jpg" alt="">
                     <h3>Dairy </h3>
-                    <div class="price"> Rs-50 -100</div>
+                    <div class="price"></div>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="https://img.freepik.com/premium-vector/stationery-store-building-buying-school-supplies-flat-cartoon-illustration_2175-5713.jpg" alt="">
                     <h3>Stationery </h3>
-                    <div class="price"> Rs-50 -100</div>
+                    <div class="price"></div>
 
                 </div>
             </div>
