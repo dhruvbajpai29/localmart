@@ -116,8 +116,8 @@ form select {
 }
 
 img {
-    width: 200px; /* Set your desired width */
-    height: 200px; /* Set your desired height */
-    object-fit:fill; /* Ensures the image fits properly without distortion */
+    width: 200px; 
+    height: 200px; 
+    object-fit:fill; 
   }
   
