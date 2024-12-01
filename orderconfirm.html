@@ -35,19 +35,26 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const orderTotalElement = document.getElementById("orderTotal");
+        const orderIdElement = document.getElementById("orderId");
+
        
-       document.addEventListener("DOMContentLoaded", () => {
-    const orderTotalElement = document.getElementById("orderTotal");
+        const totalAmount = localStorage.getItem("orderTotal");
+        orderTotalElement.textContent = totalAmount ? `₹${totalAmount}` : "₹0";
 
-    const totalAmount = localStorage.getItem("orderTotal");
+        
+        function generateOrderId() {
+            const prefix = "LOCO"; 
+            const randomNumber = Math.floor(100000 + Math.random() * 900000); 
+            return `${prefix}-${randomNumber}`;
+        }
 
-   
-    if (totalAmount) {
-        orderTotalElement.textContent = `₹${totalAmount}`;
-    } else {
-        orderTotalElement.textContent = "₹0"; 
-    }
-});
-  </script>
+        
+        const orderId = generateOrderId();
+        orderIdElement.textContent = orderId;
+    });
+</script>
+
 </body>
 </html>
